@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=0.0, user-scalable=no"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html{
+				width: 100%;
+				height: 100vh;
+				
+			}
+			body{
+				width: 100%;
+				height: 100%;
+			}
+			.box{
+				width: 100%;
+				height: 100%;
+				position: relative;
+			}
+			.box1{
+				width: 100vw;
+				height: 35%;
+				
+			}
+			.box2{
+				width: 100vw;
+				height: 61%;
+				background-color: #EFECF0;
+				
+			}
+			.box3{
+				background: url(../HPV1-2/di3.png) no-repeat;
+				width: 100vw;
+				height: 4%;
+				background-size: 100% 100%;
+				position: fixed;
+				bottom: 0;
+				
+			}
+			.banner{
+				width: 100%;
+				height: 100%;
+			}
+			.tian{
+				font: bold 40px SourceHanSansCN-Bold;
+				color: #4E881A;
+				margin-left: 4.0625rem;
+				margin-bottom: 2.75rem;
+				line-height: 0.74375rem;
+			}
+			.xing{
+				margin-left: 11.25rem;
+				font: 28px SourceHanSansCN-Regular;
+				line-height: 4.5rem;
+			/* 	margin-bottom: 1.4375rem; */
+			}
+			.xing3{
+				border: 0.125rem solid #B1D392;
+				border-radius: 0.625rem;
+				background-color: #EEEEEE;
+				width: 16.375rem;
+				height: 3.0625rem;
+				margin-left: 2.6875rem;
+			}
+			.xing2{
+				float: left;
+			}
+			.shen{
+				margin-left: 9.5rem;
+				font: 28px SourceHanSansCN-Regular;
+				line-height: 4.5rem;
+			}
+			.shen2{
+				float: left;
+			}
+			.shen3{
+				border: 0.125rem solid #B1D392;
+				border-radius: 0.625rem;
+				background-color: #EEEEEE;
+				width: 21.34375rem;
+				height: 3.0625rem;
+				margin-left: 2.6875rem;
+			}
+			.ci{
+				font: 22px  SourceHanSansCN-Regular;
+				line-height: 4.5rem;
+				color: #FF0000;
+				margin-left: 17.9375rem;
+			}
+			.dian2{
+					float: left;
+			}
+			.dian3{
+				border: 0.125rem solid #B1D392;
+				border-radius: 0.625rem;
+				background-color: #EEEEEE;
+				width: 16.375rem;
+				height: 3.0625rem;
+				margin-left: 2.6875rem;
+			}
+			.dian{
+				margin-left: 11.4375rem;
+				font: 28px SourceHanSansCN-Regular;
+				line-height: 4.5rem;
+			}
+			.yi{
+				margin-left: 7.75rem;
+				font: 28px SourceHanSansCN-Regular;
+				line-height: 4.5rem;
+				margin-top: 1.125rem;
+			}
+			.yi2{
+				
+			    float: left;
+			}
+		
+			#erjia{
+				float: left;
+			    margin-left: 2.6875rem;
+				margin-right: 1rem;
+				margin-top: 1.25rem;   /* 设置按钮向下 */
+				
+			}
+			.yi3-1{
+				float: left;
+				margin-right: 1.8125rem;
+			}
+			#sijia{
+				float: left;
+				margin-right: 0.875rem;
+				margin-top: 1.25rem;
+				
+			}
+			.yi4-2{
+				float: left;
+				margin-right: 1.8125rem;
+			}
+			#jiujia{
+				float: left;
+				margin-right: 0.875rem;
+				margin-top: 1.25rem;
+			}
+			.btn_div{
+						 position: absolute;
+						  width: 14.46875rem;  
+						  height: 4.59375rem;
+						 left: 17.125rem;
+						 top: 68.5rem;
+						
+						  
+			}
+			.btn{
+						  width: 100%;
+						  height: 100%;
+						  font:bold 1.75rem SourceHanSansCN-Bold;
+						  background-color: #AFCE11;
+						  border: 0.1875rem solid #FFFFFF;
+						  border-radius: 0.625rem;
+						  color: #FFFFEC;
+						  text-align: center;
+						  padding-top: 0.9375rem;
+						  padding-bottom: 1rem ;
+			}
+			#yue{
+						  font: 22px SourceHanSansCN-Regular;
+			              color: #FFFFFF;
+						  margin-right: 8.75rem;
+						  text-align: center;
+						  float: left;
+						  padding-top: 0.75rem;
+						  padding-bottom: 0.75rem;
+						 
+			 }
+			#ge{
+						   font: 22px SourceHanSansCN-Regular;
+						   color: #FFFFFF;
+						   margin-right: 8.75rem;
+						   text-align: center;
+						   float: left;
+						   padding-top: 0.75rem;
+						   padding-bottom: 0.75rem;
+						   position: absolute;
+						   right: 12.75rem;
+						   color: #248137;
+			 }
+			 #da{
+						  font: 22px SourceHanSansCN-Regular;
+						  color: #FFFFFF;
+						  text-align: center;
+						  padding-top: 0.75rem;
+						  padding-bottom: 0.75rem;
+						  position: absolute;
+						  right: 6.375rem;
+						 
+						  
+			 }
+			.san3{
+						  padding-left: 4.375rem;
+						  padding-right: 6.375rem;
+			 }
+			 
+			 .radio {
+			   
+			   /*  height: 26px; */
+			 	/* margin-left: 128px; */
+			 	position: relative;
+			 
+			 }       
+			  
+			  label:first-child {
+			     margin-right: -1.4375rem;
+			
+			  }
+			  
+			 label:last-child {
+			     margin-left: -1.5625rem;
+			  }
+			 
+			
+			 
+			 /* 默认状态的大圈*/
+			 .radio_bg {
+			   position: relative;
+			   display: inline-block;
+			   height: 2rem;
+			   width: 2rem;
+			   border: 0.125rem solid #B5D493;
+			   border-radius: 50%;
+			   margin-left: 2.6875rem;
+			 } 
+			 
+			 /* 删除原按钮样式*/
+			 label input, .radio_on {
+			   display: none;
+			 } 
+			 .pos{
+			     display: inline;
+			     vertical-align: middle;
+				 /* margin-right: 1rem; */
+			 } 
+			 
+			 
+			label:hover .radio_bg, label input:checked + span.pos span.radio_bg {
+			   border: 2px solid #B5D493;
+			 }   
+			 
+			 /* 选中按钮时的小样式*/
+			label input:checked + span.pos span.radio_bg span.radio_on {
+			   display: inline-block;
+			   position: absolute;
+			   top: 0.4375rem;
+			   left: 0.4375rem;
+			   width: 1.125rem;
+			   height: 1.125rem;
+			   border-radius: 50%;
+			   background-color: #B5D493;
+			 }
+			 
+			
+			 .er1 ,.er2 ,.er3{
+				/* display: inline-block; */
+				 margin-left: 0.5rem;
+				/* margin-top: 0.0625rem; */
+			 }
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1">
+				<img class="banner"  src="../HPV1-2/page1.png" >
+			</div>
+			<div class="box2">
+				<div class="tian">填写个人信息</div>
+				<div class="wen">
+				   <form action="target.html">
+					<div class="xing"><div class="xing2">姓名:</div><input type="text" name="xing" class="xing3"/></div>
+					<div class="shen"><div class="shen2">身份证:</div><input type="text" name="shen3" class="shen3"/></div>
+					<div class="ci">此身份号是男性,HVP只针对女性</div>
+					<div class="dian"><div class="dian2">电话:</div><input type="text" name="dian" class="dian3"/></div>
+					<div class="yi"><div class="yi2">疫苗种类:</div>
+					    <!-- <div class="sanan">
+					     	<input type="radio" name="zhonglei" id="erjia" value="er" style="width:2rem;height:2rem"/><div class="yi3-1"><label for="erjia">二价</label></div>
+					     	<input type="radio" name="zhonglei" id="sijia" value="si" style="width:2rem;height:2rem"/><div class="yi4-2"><label for="si">四价</label></div>
+					     	<input type="radio" name="zhonglei" id="jiujia" value="jiu" style="width:2rem;height:2rem"/><div class="yi5-2"></div><label for="jiu">九价</label></div>
+						 </div> -->
+						 <div class="radio">
+						 	<label>
+						 	    <input name="zhonglei" type="radio" value="er" />
+						 	    <span class="pos">
+						 	        <span class="radio_bg">
+						 	            <span class="radio_on"></span>
+						 	        </span>
+						 	    </span>
+						 	    <span class="er1">二价</span>
+						 	</label>
+						 	<label>
+						 	    <input name="zhonglei" type="radio" value="si" checked="checked"/>
+						 	    <span class="pos">
+						 	        <span class="radio_bg">
+						 	            <span class="radio_on"></span>
+						 	        </span>
+						 	    </span>
+						 	    <span class="er2">四价</span>
+						 	</label>
+							<label>
+							    <input name="zhonglei" type="radio" value="jiu" />
+							    <span class="pos">
+							        <span class="radio_bg">
+							            <span class="radio_on"></span>
+							        </span>
+							    </span>
+							    <span class="er3">九价</span>
+							</label>
+						 </div>
+						 
+						 
+						 
+						 
+						 
+						 
+						 
+				   </form>
+				   </div>
+				   <div class="btn_div">
+			       <button class="btn" onclick="location ='hpv1-3.html'">下一步</button></div>	
+				</div>
+			
+			<div class="box3">
+				<div class="san3">
+					<p id="yue">阅读预约事项</p>
+					<p id="ge">个人资料填写 </p> 
+					<p id="da"> 答题预约</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
